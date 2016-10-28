@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.catacomblabs.wakemeup.ListStationsHarbour">
+
+    <include xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/harbour_panvel"
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_above="@+id/harbour_trans"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans"
+            android:onClick="sendToListStationsHPanvel"
+            android:paddingEnd="28dp"
+            android:paddingStart="28dp"
+            android:text="@string/harbour_line_panvel"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/harbour_andheri"
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/harbour_panvel"
+            android:layout_below="@+id/harbour_trans"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans"
+            android:onClick="sendToListStationsHAndheri"
+            android:paddingEnd="23dp"
+            android:paddingStart="23dp"
+            android:text="@string/harbour_line_andheri"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/harbour_trans"
+            style="android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/harbour_panvel"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans"
+            android:onClick="sendToListStationsHTransHarbour"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/harbour_line_trans_harbour"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

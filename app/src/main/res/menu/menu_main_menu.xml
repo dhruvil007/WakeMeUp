@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:background="@android:color/white"
+    tools:context=".MainMenuRailway">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/intro_button"
+        android:orderInCategory="200"
+        android:title="Show Intro"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.catacomblabs.wakemeup">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <service android:name="com.catacomblabs.wakemeup.BackgroundLocationCheckService" />
+        <service android:name="com.catacomblabs.wakemeup.CancelService" />
+
+        <receiver android:name="com.catacomblabs.wakemeup.LocationReceiver">
+            <intent-filter>
+                <action android:name="a" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainMenuRailway"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.catacomblabs.wakemeup.ListStationsWestern"
+            android:label="@string/title_activity_list_stations_western"
+            android:parentActivityName=".MainMenuRailway"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuRailway" />
+        </activity>
+        <activity
+            android:name="com.catacomblabs.wakemeup.ListStationsCentral"
+            android:label="@string/title_activity_list_stations_central"
+            android:parentActivityName=".MainMenuRailway"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuRailway" />
+        </activity>
+        <activity
+            android:name="com.catacomblabs.wakemeup.ListStationsHarbour"
+            android:label="@string/title_activity_list_stations_harbour"
+            android:parentActivityName=".MainMenuRailway"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuRailway" />
+        </activity>
+        <activity
+            android:name="com.catacomblabs.wakemeup.ListPanvel"
+            android:label="@string/title_activity_list_panvel"
+            android:parentActivityName="com.catacomblabs.wakemeup.ListStationsHarbour"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.catacomblabs.wakemeup.ListStationsHarbour" />
+        </activity>
+        <activity
+            android:name="com.catacomblabs.wakemeup.ListAndheri"
+            android:label="@string/title_activity_list_andheri"
+            android:parentActivityName="com.catacomblabs.wakemeup.ListStationsHarbour"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.catacomblabs.wakemeup.ListStationsHarbour" />
+        </activity>
+        <activity android:name=".ListTransHarbour"
+            android:label="@string/harbour_line_trans_harbour"
+            android:parentActivityName="com.catacomblabs.wakemeup.ListStationsHarbour"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.catacomblabs.wakemeup.ListStationsHarbour" />
+        </activity>
+        <activity
+            android:name="com.catacomblabs.wakemeup.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainMenuRailway"
+            android:screenOrientation="portrait"
+            android:theme="@style/SettingsBase">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainMenuRailway" />
+        </activity>
+        <activity
+            android:name="com.catacomblabs.wakemeup.WakeUpActivity"
+            android:excludeFromRecents="true"
+            android:label="WakeUpActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="com.catacomblabs.wakemeup.IntroActivity"
+            android:label="IntroActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

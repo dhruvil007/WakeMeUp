@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Wake Me Up</string>
+
+    <string name="select">Select</string>
+    <string name="action_settings">Settings</string>
+    <string name="western">Western</string>
+    <string name="central">Central</string>
+    <string name="harbour">Harbour</string>
+    <string name="search">Search</string>
+    <string name="harbour_line_panvel">Panvel</string>
+    <string name="harbour_line_andheri">Andheri</string>
+    <string name="harbour_line_trans_harbour">Trans\nHarbour</string>
+    <string name="title_activity_list_stations_western">ListStationsWestern</string>
+    <string name="title_activity_list_stations_central">ListStationsCentral</string>
+    <string name="title_activity_list_stations_harbour">ListStationsHarbour</string>
+    <string name="title_activity_list_panvel">ListPanvel</string>
+    <string name="title_activity_list_andheri">ListAndheri</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_central_stations_name">CentralStationsNameActivity</string>
+    <string name="station_name">Station Name</string>
+    <string name="time">Time</string>
+    <string name="title_activity_wake_up">Wake Up!</string>
+
+    <string name="intro_title_page_1">Welcome to WakeMeUp</string>
+    <string name="intro_title_page_2">Location Permissions</string>
+    <string name="intro_title_page_3">Select A Line</string>
+    <string name="intro_title_page_4">Create An Alarm</string>
+    <string name="intro_title_page_5">Show An Existing Alarm</string>
+
+    <string name="intro_desc_page_1">Never miss your station again!</string>
+    <string name="intro_desc_page_2">We need your location to wake you up precisely when you need to.</string>
+    <string name="intro_desc_page_3">Select the railway line you are travelling in.</string>
+    <string name="intro_desc_page_4">Tap on the station to create an alarm</string>
+    <string name="intro_desc_page_5">Tap on the button in the bottom right to see any alarms you have set.</string>
+
+    <string-array name="list_preference_sort">
+        <item>Alphabetic</item>
+        <item>Sequential</item>
+    </string-array>
+
+    <string-array name="list_preference_sort_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>

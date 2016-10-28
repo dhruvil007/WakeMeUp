@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainMenuRailway">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/central_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="false"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans"
+            android:onClick="sendToListStationsC"
+            android:paddingEnd="22dp"
+            android:paddingStart="22dp"
+            android:text="@string/central"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/western_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@id/central_button"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans"
+            android:onClick="sendToListStationsW"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/western"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_above="@+id/central_button"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans"
+            android:onClick="sendToLineSelectH"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/harbour"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

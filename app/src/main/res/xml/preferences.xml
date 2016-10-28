@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_box_intro"
+        android:scrollbars="vertical"
+        android:summary="Hello"
+        android:summaryOff="Not displaying the intro everytime the app starts"
+        android:summaryOn="Displaying the intro everytime the app starts"
+        android:textColor="@android:color/black"
+        android:title="Display Intro" />
+
+    <RingtonePreference
+        android:key="ringtone_picker"
+        android:ringtoneType="alarm"
+        android:defaultValue="false"
+        android:summary="Pick a Ringtone"
+        android:title="Alarm Ringtone" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/list_preference_sort"
+        android:entryValues="@array/list_preference_sort_values"
+        android:key="sort_list"
+        android:summary="%s"
+        android:title="Sort Sequence" />
+
+</PreferenceScreen>

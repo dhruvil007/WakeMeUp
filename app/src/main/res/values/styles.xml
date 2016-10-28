@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppThemeBase">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:editTextColor">@android:color/white</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorHightlight</item>
+        <item name="colorButtonNormal">@color/colorButtons</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="android:actionDropDownStyle">@style/ToolbarDropDownTheme</item>
+    </style>
+
+    <style name="SettingsBase" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorSecondary">@color/light_gray</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CancelButtonTheme" parent="AppThemeBase">
+        <item name="colorAccent">@android:color/holo_red_dark</item>
+        <item name="colorButtonNormal">@android:color/holo_red_dark</item>
+    </style>
+
+
+    <style name="ToolbarDropDownTheme">
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+</resources>
